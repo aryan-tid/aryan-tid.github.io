@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta property="og:title" content="Aryan's Journey">
+    <meta property="og:description" content="Aryan's Journey into the World of Programming...">
+    <meta property="og:image" content="https://aryantidke.000webhostapp.com/images/logo.jpg">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan's Coding Odyssey: Journey into the World of Programming</title>
+    <link rel="stylesheet" type="text/css" href="#" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="body">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <header class="header">
+      <div>
+        <a href="./index.html">
+          <img src="./images/logo.jpg" alt="logo" class="logo" class="circular" alt="circular">
+        </a>
+      </div>
+      <div class="buttons">
+        <a href="#" class="contact-button">Say Hello...</a>
+      </div>
+    </header>
+    <div class="intro-h1">
+      <h1>Want to chat with me...?</h1>
+    </div>
+    <div class="intro-h2">
+      <h1>Here I'm,</h1>
+    </div>
+    <div style="display: none;" class="pg-contact-div-img">
+      <img src="logo.jpg" class="pg-contact-img">
+    </div>
+    <p>&ensp;</p>
+<div class="form-center">
+    <form id="paymentForm">
+      <h2>Send me a Message</h2>
+      <label for="name">Name:</label>
+      <div class="error-message" id="nameErrorMessage"></div>
+      <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+      <p></p>
+      <p></p>
+      <label for="Email">Email:</label>
+      <div class="error-message" id="EmailErrorMessage"></div>
+      <input type="email" id="Email" name="Email" placeholder="Enter your Email" required>
+      <p></p>
+      <p></p>
+      <label for="Mobile">Mobile No.:</label>
+      <div class="error-message" id="MobileErrorMessage"></div>
+      <input type="number" id="Mobile" name="Mobile" placeholder="Enter your Mobile No." required>
+      <p></p>
+      <p></p>
+      <input type="hidden" id="Time" name="Time" readonly>
+      <input type="hidden" id="ipField" name="ipField" readonly>
+      <input type="hidden" id="location" name="ISPLocation" readonly>
+      <input type="hidden" id="isp" name="ISP" readonly>
+      <input type="hidden" id="latitude" name="Latitude" readonly>
+      <input type="hidden" id="longitude" name="Longitude" readonly>
+      <p hidden id="browser">Browser: </p>
+      <p hidden id="os">Operating System: </p>
+      <p hidden id="userAgent">User Agent: </p>
+      <input type="hidden" id="browserval" name="Browser" readonly>
+      <input type="hidden" id="OSval" name="OS" readonly>
+      <input type="hidden" id="userAgentval" name="User Agent" readonly>
+      <p></p>
+      <p></p>
+      <label for="note">Message:</label>
+      <div class="error-message" id="#"></div>
+      <textarea id="Message" name="Message" placeholder="Enter your Message"></textarea>
+      <input type="hidden" id="Status" name="Status" value="New">
+      <button class="submit-button" id="submit" style="width: 100%;" type="submit">Submit Details</button>
+      <p>&ensp;</p>
+      <div class="p-notice"><p>After Clicking on Submit wait for few seconds...</p> </div>
+    </form>
+</div>
+      <div class="intro-h1">
+        <h1>My Recent Work</h1>
+      </div>
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="images/upi.jpeg" alt="" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="name">UPI Payment Collector</p>
+                <p class="description">It can Collect payments from other persons and record transactions in Google sheets to verify manually...</p>
+                <button title="UPI" class="button" onclick=" window.open('https://aryantidake.w3spaces.com/', '_blank'); return false;">Visit Project</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="images/profile2.jpg" alt="" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Coming Soon...</h2>
+                <p class="description">More comming Soon...</p>
+                <button class="button" disabled="disabled">View Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close"></span>
+          <p>&ensp;</p>
+          <p>Your Details are successfully Submitted. I will personally reach to you...</p>
+        </div>
+      </div>
+  </body>
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <script src="./js/myscript.js"></script>
+</html>
