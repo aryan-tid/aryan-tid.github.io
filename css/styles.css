@@ -82,12 +82,13 @@
     color: #3A1237;
     padding: 18px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: dashed;
     margin-right: 10px;
     margin-left: auto;
     border: 2px solid #3A1237;
     transition: all 0.3s linear, color 0.2s;
+    cursor: pointer;
 }
 
 .contact-button:hover {
@@ -95,7 +96,7 @@
     padding: 18px;
     border: none;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: dashed;
     margin-right: 10px;
     margin-left: auto;
@@ -122,13 +123,13 @@
     color: #3A1237;
     padding-left: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 900;
     transition: all 0.5s ease-in-out;
 }
 
 .intro-h2:hover {
-    font-size: 19px;
+    font-size: 1.1rem;
 }
 
 .pg-img {
@@ -143,7 +144,7 @@
 
 .pg-div-img {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 3rem;
 }
 
 .pg-contact-div-img {
@@ -163,22 +164,28 @@
 }
 
 .spacer-detail-intro {
-    padding-top: 120px;
+    padding-top: 5rem;
+}
+
+.spacer-detail-intro2 {
+  padding-top: 1.9rem;
 }
 
 .detail-intro-bg {
     text-align: center;
     align-items: center;
     background-color: #5e2159;
-    padding: 100px;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
 }
 
 .detail-intro {
     text-align: center;
     color: #fff;
     width: 50%;
-    min-width: 220px;
+    min-width: 300px;
     margin: 0 auto;
+    font-size: 1.2rem;
 }
 
 .form-center {
@@ -312,223 +319,3 @@ textarea:focus {
   text-decoration: none;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* {
-    box-sizing: border-box;
-  }
-  
-  .scroll-prompt {
-    position: absolute;
-    z-index: 998;
-    bottom: -60px;
-    left: 50%;
-    margin-left: -80px;
-    width: 160px;
-    height: 160px;
-  }
-  .scroll-prompt .scroll-prompt-arrow-container {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -18px;
-    -webkit-animation-name: bounce;
-            animation-name: bounce;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-  .scroll-prompt .scroll-prompt-arrow {
-    -webkit-animation-name: opacity;
-            animation-name: opacity;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-  .scroll-prompt .scroll-prompt-arrow:last-child {
-    animation-direction: reverse;
-    margin-top: -6px;
-  }
-  .scroll-prompt .scroll-prompt-arrow > div {
-    width: 36px;
-    height: 36px;
-    border-right: 8px solid #a76a7d;
-    border-bottom: 8px solid #a76a7d;
-    transform: rotate(45deg) translateZ(1px);
-  }
-  
-  @-webkit-keyframes opacity {
-    0% {
-      opacity: 0;
-    }
-    10% {
-      opacity: 0.1;
-    }
-    20% {
-      opacity: 0.2;
-    }
-    30% {
-      opacity: 0.3;
-    }
-    40% {
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    60% {
-      opacity: 0.6;
-    }
-    70% {
-      opacity: 0.7;
-    }
-    80% {
-      opacity: 0.8;
-    }
-    90% {
-      opacity: 0.9;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes opacity {
-    0% {
-      opacity: 0;
-    }
-    10% {
-      opacity: 0.1;
-    }
-    20% {
-      opacity: 0.2;
-    }
-    30% {
-      opacity: 0.3;
-    }
-    40% {
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    60% {
-      opacity: 0.6;
-    }
-    70% {
-      opacity: 0.7;
-    }
-    80% {
-      opacity: 0.8;
-    }
-    90% {
-      opacity: 0.9;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    10% {
-      transform: translateY(3px);
-    }
-    20% {
-      transform: translateY(6px);
-    }
-    30% {
-      transform: translateY(9px);
-    }
-    40% {
-      transform: translateY(12px);
-    }
-    50% {
-      transform: translateY(15px);
-    }
-    60% {
-      transform: translateY(18px);
-    }
-    70% {
-      transform: translateY(21px);
-    }
-    80% {
-      transform: translateY(24px);
-    }
-    90% {
-      transform: translateY(27px);
-    }
-    100% {
-      transform: translateY(30px);
-    }
-  }
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    10% {
-      transform: translateY(3px);
-    }
-    20% {
-      transform: translateY(6px);
-    }
-    30% {
-      transform: translateY(9px);
-    }
-    40% {
-      transform: translateY(12px);
-    }
-    50% {
-      transform: translateY(15px);
-    }
-    60% {
-      transform: translateY(18px);
-    }
-    70% {
-      transform: translateY(21px);
-    }
-    80% {
-      transform: translateY(24px);
-    }
-    90% {
-      transform: translateY(27px);
-    }
-  
-  
-    100% {
-      transform: translateY(30px);
-    }
-  }
-  .cd__main {
-      background: black !important;
-      align-items: center;
-      height: 82vh;
-      display: flex;
-      width: 100%;}

@@ -12,7 +12,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aryan's Coding Odyssey: Journey into the World of Programming</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="#" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -23,12 +22,12 @@
     <div class="bg bg3"></div>
     <header class="header">
       <div>
-        <a href="https://aryan-tid.github.io/portfolio/">
+        <a href="./">
           <img src="./images/logo.jpg" alt="logo" class="logo" class="circular" alt="circular">
         </a>
       </div>
       <div class="buttons">
-        <a href="#" class="contact-button">Say Hello...</a>
+        <a class="contact-button">Say Hello...</a>
       </div>
     </header>
     <div class="intro-h1">
@@ -82,72 +81,66 @@
       <div class="p-notice"><p>After Clicking on Submit wait for few seconds...</p> </div>
     </form>
 </div>
-      <div class="intro-h1">
-        <h1>My Recent Work</h1>
+<div class="intro-h1">
+  <h1>My Recent Work</h1>
+</div>
+
+<div class="slide-container swiper">
+  <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+              <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                      <img src="images/upi.jpeg" alt="" class="card-img">
+                  </div>
+              </div>
+
+              <div class="card-content">
+                  <h2 class="name">UPI Payment Collector</h2>
+                  <p class="description">It can Collect payments from other persons and record transactions in Google sheets to verify manually...</p>
+                  <button title="UPI" class="button" onclick=" window.open('https://aryan-tid.github.io/upi-payment/', '_blank'); return false;">Visit Project</button>
+              </div>
+          </div>
+          <div class="card swiper-slide">
+              <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                      <img src="https://vandemarathi.github.io/en/images/logo-small.png" alt="" class="card-img">
+                  </div>
+              </div>
+
+              <div class="card-content">
+                  <h2 class="name">Vande Marathi</h2>
+                  <p class="description">A Free E-Learning Platform...</p>
+                  <button title="UPI" class="button" onclick=" window.open('https://vandemarathi.github.io/en/', '_blank'); return false;">Visit Project</button>
+              </div>
+          </div>
+          <div class="card swiper-slide">
+              <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                      <img src="#" alt="" class="card-img">
+                  </div>
+              </div>
+
+              <div class="card-content">
+                  <h2 class="name">Coming Soon...</h2>
+                  <p class="description">More comming Soon...</p>
+
+                  <button class="button" disabled="disabled">View Project</button>
+              </div>
+          </div>
       </div>
-         <div class="slide-container swiper">
-        <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
+  </div>
 
-                        <div class="card-image">
-                            <img src="images/upi.jpeg" alt="" class="card-img">
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">UPI Payment Collector</h2>
-                        <p class="description">It can Collect payments from other persons and record transactions in Google sheets to verify manually...</p>
-                        <button title="UPI" class="button" onclick=" window.open('https://aryan-tid.github.io/upi-payment/', '_blank'); return false;">Visit Project</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <img src="https://vandemarathi.github.io/en/images/logo.png" alt="" class="card-img">
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">Vande Marathi</h2>
-                        <p class="description">A Free E-Learning Platform</p>
-
-                        <button class="button" onclick=" window.open('https://vandemarathi.github.io/en/', '_blank'); return false;">View Project</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <img src="#" alt="" class="card-img">
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name">Comming Soon...</h2>
-                        <p class="description">More Projects are on the way...</p>
-
-                        <button class="button" onclick=" window.open('#', '_blank'); return false;" disabled>View Project</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close"></span>
-          <p>&ensp;</p>
-          <p>Your Details are successfully Submitted. I will personally reach to you...</p>
-        </div>
-      </div>
+  <div class="swiper-button-next swiper-navBtn"></div>
+  <div class="swiper-button-prev swiper-navBtn"></div>
+  <div class="swiper-pagination"></div>
+</div>
   </body>
   <!-- Swiper JS -->
   <script src="js/swiper-bundle.min.js"></script>
