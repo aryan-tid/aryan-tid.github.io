@@ -96,7 +96,7 @@ $(document).ready(() => {
         submitButton.disabled = true;
         e.preventDefault();
         let requestBody = new FormData(form); 
-        fetch('https://script.google.com/macros/s/AKfycbzPC6GR6s1uFz5csY0cKbT9qFz_L2EPfZSiamrXOWNwTOfHtWAz5zjllYhBFFg-weoOiA/exec', { 
+        fetch('https://script.google.com/macros/s/AKfycbxW0GV3V1X51xaiR3BvWxM7ALHv98hJVi8s8_CxFNEOv0EMUffIy0DcET-nAqqSKdtnTg/exec', { 
           method: 'POST', 
           body: requestBody 
         })
