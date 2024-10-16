@@ -1,10 +1,14 @@
 /* styles.css */
+.hidden {
+  display: none;
+}
+
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #3a12379c 50%, #551e504f 50%);
   bottom:0;
   left:-50%;
-  opacity:.5;
+  opacity:.5; 
   position:fixed;
   right:-50%;
   top:0;
@@ -115,7 +119,7 @@
     font-family: "Lucida Console";
     text-align: center;
     font-weight: 900;
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 
 .intro-h2 {
@@ -123,13 +127,13 @@
     color: #3A1237;
     padding-left: 10px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 900;
     transition: all 0.5s ease-in-out;
 }
 
 .intro-h2:hover {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .pg-img {
@@ -192,14 +196,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 7px;
+  padding-top: 30px;
+  /* height: 130vh; */
+}
+
+#step2 {
+  color: #fff;
+  border: 1px solid white;
+}
+#step2Content {
+  padding: 10px;
 }
 
 form {
-  max-width: 350px;
-  padding: 35px;
-  background-color: #2b0828;
-  border-radius: 20px;
+  min-width: 280px;
+  max-width: 360px;
+  padding: 1.5rem;
+  background-color: #2b0828e3;
+  border-radius: 30px;
   display: inline-block;
 }
 
@@ -207,12 +222,12 @@ h2 {
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
+  font-size:larger;
 }
 
 label {
   font-weight: bold;
   color: #ddd;
-  margin-bottom: 8px;
 }
 
 input[type="text"],
@@ -318,4 +333,30 @@ textarea:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+.loading-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.112);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000; /* Make sure it covers other content */
+  }
+  
+  .loading-content {
+	text-align: center;
+  }
+
+.hidden {
+	display: none;
+}
+
+.loader {
+	color: #ffffff;
 }

@@ -93,6 +93,7 @@ $(document).ready(() => {
       }
       
       form.addEventListener('submit', e => {
+        document.getElementById('loadingOverlay').style.display = 'flex';
         submitButton.disabled = true;
         e.preventDefault();
         let requestBody = new FormData(form); 
@@ -102,28 +103,18 @@ $(document).ready(() => {
         })
         .then(response => {
           if (response.ok) {
-            modal.style.display = "block";
+            step2.classList.remove('hidden');
             resetForm(); // Call the resetForm function after successful submission
           } else {
             throw new Error('Network response was not ok.');
           }
           submitButton.disabled = false;
+          document.getElementById('loadingOverlay').style.display = 'none';  // Hide loading overlay
         })
         .catch(error => {
           alert('Error! Unable to submit your data. Please try again later.');
           console.error('Error:', error);
           submitButton.disabled = false;
+          document.getElementById('loadingOverlay').style.display = 'none';  // Hide loading overlay
         });
       });
-
-// Close the modal when user clicks on close button
-closeBtn.onclick = function() {
-  modal.style.display = "none";
-}
-
-// Close the modal when user clicks anywhere outside of the modal
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
